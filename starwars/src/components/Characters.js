@@ -21,7 +21,7 @@ const Characters = () => {
     console.log(characters);
 
     return (
-        <div>
+        <div className="character-card-div">
             {
                  characters.map((character) => {
                     return <CharacterCard key={character.name} name={character.name} height={character.height} mass={character.mass} gender={character.gender} />

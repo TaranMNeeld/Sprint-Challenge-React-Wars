@@ -1,17 +1,21 @@
 import React from "react";
 import "./Character.scss";
-import { Label } from "semantic-ui-react";
+import "semantic-ui-css/semantic.min.css";
+import { Segment, Statistic } from "semantic-ui-react";
 
 const CharacterCard = (props) => {
 
     return (
         <div className="character-card">
-            <Label className="name-label" size="massive">{props.name}</Label>
-            <div className="character-info">
-                <h3>{props.height}</h3>
-                <h3>{props.mass}</h3>
-                <h3>{props.gender}</h3>
-            </div>
+            <Segment stacked className="name-label">{props.name}</Segment>
+            <Statistic className="stat-div">
+                <Statistic.Value>{props.height}</Statistic.Value>
+                <Statistic.Label className="stat">cm</Statistic.Label>
+                <Statistic.Value>{props.mass}</Statistic.Value>
+                <Statistic.Label className="stat">kg</Statistic.Label>
+                <Statistic.Value>Gender</Statistic.Value>
+                <Statistic.Label className="stat">{props.gender}</Statistic.Label>
+            </Statistic>
         </div>
     );
 };
