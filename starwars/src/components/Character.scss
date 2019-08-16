@@ -1,0 +1,32 @@
+.character-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 480px;
+    width: 300px;
+    font-size: 2rem;
+    color: black;
+    margin: 5%;
+    border: 2px solid grey;
+    background: white;
+}
+
+.character-card-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    grid-auto-flow: column;
+    width: 1500px;
+}
+
+.stat {
+    margin-bottom: 10%;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10%;
+}
+
+.name-label {
+    font-size: 2rem !important;
+    background: lightgrey !important;
+}
